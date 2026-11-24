@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer components {
+ .head {
+  @apply bg-gradient-to-r from-purple-600 to-pink-500 p-4;
+ }
+}

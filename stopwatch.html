@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" dir="rtl  ">
+ <head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کرنومتر</title>
+ </head>
+ <body class="">
+  <div
+   class="min-h-screen w-full flex items-center justify-center bg-gray-100 p-4"
+  >
+   <div
+    class="w-full max-w-md bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center gap-8"
+   >
+    <h1 class="text-2xl font-bold text-gray-800">کرنومتر</h1>
+    <div
+     class="flex items-center bg-gray-400 justify-center gap-3 text-5xl font-mono font-semibold text-blue-600"
+    >
+     <span id="minutsspan" class="rounded-2xl">00</span>
+     <span class="text-white text-3xl">:</span>
+     <span id="secondspan">00</span>
+     <span class="text-white text-3xl">:</span>
+     <span id="milisecondspan ">00</span>
+    </div>
+    <!--  -->
+    <div
+     class="flex justify-between w-full px-8 text-sm text-gray-500 font-medium"
+    >
+     <span>دقیقه</span>
+     <span> ثانیه</span>
+     <span>میلی ثانیه</span>
+    </div>
+    <div class="bg-black border-1 w-full"></div>
+    <div class="justify-start gap-5 md:gap-10 flex w-full">
+     <!--  -->
+     <button
+      id="start"
+      class="px-4 py-2 cursor-pointer bg-green-600 rounded-lg text-white text-sm transition transform duration-300 active:translate-y-4"
+     >
+      شروع
+     </button>
+     <!--  -->
+     <button
+      id="stop"
+      class="px-4 py-2 cursor-pointer bg-red-600 rounded-lg text-white text-sm"
+     >
+      توقف
+     </button>
+     <!--  -->
+     <button
+      id="end"
+      class="px-4 py-2 cursor-pointer bg-blue-600 rounded-lg text-white text-sm"
+     >
+      پایان
+     </button>
+     <!--  -->
+     <button
+      id="reset"
+      class="px-4 py-2 cursor-pointer bg-orange-600 rounded-lg text-white text-sm"
+     >
+      ریست
+     </button>
+     <!--  -->
+    </div>
+    <!-- توضیحاتrecord -->
+    <div class="mt-8 w-full">
+     <h3
+      class="text-gray-400 text-sm items-center justify-center flex mb-2 ml-1"
+     >
+      تاریخچه زمان ها
+     </h3>
+     <!--  -->
+     <div
+      class="bg-gray-900 shadow-inner rounded-2xl p-4 max-h-48 overflow-y-auto border border-gray-800"
+     >
+      <div
+       class="flex justify-between items-center py-2 bordeer-b border-gray-800 last:border-0"
+      >
+       <span class="text-gray-400 text-sm">توقف</span>
+       <span class="font-mono text-white font-bold">4:5:6</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/stopwatch.js" defer></script>
+ </body>
+</html>
